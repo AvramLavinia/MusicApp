@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainF"
+    tools:context=".MainActivity"
+    android:background="#e3aadc">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:text="HOME"
+        android:textAlignment="center"
+        android:textSize="65dp"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="11dp" />
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="174dp"
+        android:layout_height="match_parent"
+        android:id="@+id/home2">
+
+        <Button
+            android:id="@+id/profil"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="90dp"
+            android:text="Profile" />
+
+        <Button
+            android:id="@+id/setari"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="160dp"
+            android:text="Setting" />
+
+        <Button
+            android:id="@+id/playlist"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="230dp"
+            android:text="Playlist" />
+
+        <Button
+            android:id="@+id/playlistOff"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="300dp"
+            android:text="Playlist
+            Offline" />
+
+        <Button
+            android:id="@+id/signOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="610dp"
+            android:text="Log out" />
+    </com.google.android.material.navigation.NavigationView>
+
+</LinearLayout>

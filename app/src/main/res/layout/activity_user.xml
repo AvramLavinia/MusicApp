@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActivity"
+    android:background="@color/cardview_light_background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="250dp"
+           android:background="#e3aadc">
+
+           <ImageView
+               android:id="@+id/imageProfil"
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:layout_centerInParent="true"
+               android:background="@drawable/us"></ImageView>
+
+           <EditText
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/showWelcome"
+               android:layout_below="@+id/imageProfil"
+               android:hint="Bun Venit!"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="5dp"
+               android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+               android:textColor="@color/white">
+
+           </EditText>
+       </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="281dp"
+            android:layout_margin="15dp"
+            android:background="@color/white"
+            android:padding="15dp">
+
+            <!---Shoe Name-->
+
+            <ImageView
+                android:id="@+id/iconProfil"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/user">
+
+            </ImageView>
+
+            <EditText
+                android:id="@+id/fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/iconProfil"
+                android:layout_marginStart="50dp"
+                android:hint="Loading"
+                android:textSize="18sp">
+
+            </EditText>
+
+
+            <!---Shoe Email-->
+
+            <View
+                android:id="@+id/divider_name"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/phone"
+                android:layout_marginTop="-57dp"
+                android:background="@android:color/darker_gray">
+
+            </View>
+
+            <ImageView
+                android:id="@+id/iconEmail"
+                android:layout_width="40dp"
+                android:layout_height="31dp"
+                android:layout_below="@+id/divider_name"
+                android:layout_marginTop="27dp"
+                android:background="@drawable/email">
+
+            </ImageView>
+
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider_name"
+                android:layout_alignStart="@+id/iconEmail"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="92dp"
+                android:hint="Loading"
+                android:textSize="18sp">
+
+            </EditText>
+
+            <View
+                android:id="@+id/divider_email"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/fullname"
+                android:layout_marginTop="85dp"
+                android:background="@android:color/darker_gray">
+
+            </View>
+
+            <!---Shoe Phone-->
+
+            <ImageView
+                android:id="@+id/iconMobil"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/divider_email"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/mobil">
+
+            </ImageView>
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider_email"
+                android:layout_alignStart="@+id/iconMobil"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="-63dp"
+                android:hint="Loading"
+                android:textSize="18sp">
+
+            </EditText>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/purple_200"
+    android:orientation="vertical"
+    tools:context=".Settings">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#CC000000"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20sp"
+        android:text="Update user data"/>
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/phone1"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Your phone for changes "
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingStart="40dp"
+        android:paddingEnd="0dp" />
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/fullname1"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="New Name"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingStart="40dp"
+        android:paddingEnd="0dp" />
+
+
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="339dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingStart="40dp"
+        android:paddingEnd="0dp" />
+
+
+    <EditText
+        android:id="@+id/conPassword1"
+        android:layout_width="339dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Confirmation Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingStart="40dp"
+        android:paddingEnd="0dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/uploadBtn"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:text="Upload" />
+
+
+
+
+</LinearLayout>
